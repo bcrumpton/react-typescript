@@ -13,16 +13,13 @@ const App: React.FC = () => {
     e.preventDefault();
     setTodos([...todos, { id: Date.now(), todo: todo, isDone: false }])
     setTodo("");
-
-    console.log(todo)
-    console.log(todos)
-
   }
 
   return (
     <div className="App">
       <h1>Tasket</h1>
       <Form todo={todo} setTodo={setTodo} handleAdd={handleAdd} />
+      <TodoList todos={todos} setTodos={setTodos} />
     </div>
   );
 }
