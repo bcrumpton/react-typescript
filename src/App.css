@@ -32,7 +32,21 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+.input-group {
+  display: inline-flex;
+  flex-direction: column;
+}
+
+.input-group input {
+  margin-top: 0.5rem;
+}
+
+.todo-list {
+  margin-top: 2rem;
 }
